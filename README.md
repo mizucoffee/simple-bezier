@@ -4,7 +4,7 @@
 ## Installation
 
 ```
-yarn add @kawakawaritsuki/simple-bezier
+yarn add kawakawaritsuki/simple-bezier
 ```
 
 ## How to use
