@@ -4,7 +4,7 @@
 ## Installation
 
 ```
-yarn add mizucoffee/simple-bezier
+yarn add simple-bezier
 ```
 
 ## How to use
