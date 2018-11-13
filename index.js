@@ -3,6 +3,7 @@ module.exports = (points, fineness) => {
   for (let i = 0; i < points.length - 1; i++) lines.push(lineSplit(points[i][0], points[i][1],points[i+1][0], points[i+1][1], fineness))
 
   const bezier = [];
+  bezier.push([points[0][0],points[0][1]]);
   [...Array(fineness)].forEach((n, index) => {
     let l = lines.map(e => e[index])
     while(l.length > 1) {
@@ -14,6 +15,7 @@ module.exports = (points, fineness) => {
     }
     bezier.push([l[0][0], l[0][1]])
   })
+  bezier.push([points[points.length-1][0],points[points.length-1][1]])
   return bezier
 }
 const lineSplit = (x1,y1,x2,y2, split) => [...Array(split)]
