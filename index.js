@@ -1,5 +1,4 @@
 module.exports = (points, fineness) => {
-
   if(points.length < 3) return []
   if(fineness <= 0) return []
   if(points.some(p => p.length < 2 || !Number.isFinite(p[0]) || !Number.isFinite(p[1]))) return []
@@ -23,5 +22,6 @@ module.exports = (points, fineness) => {
   bezier.push([points[points.length-1][0],points[points.length-1][1]])
   return bezier
 }
+
 const lineSplit = (x1,y1,x2,y2, split) => [...Array(split)]
   .map((e,i) => ([x1 + ((x2 - x1) / (split+1)) * (i+1), y1 + ((y2 - y1) / (split+1)) * (i+1)]))

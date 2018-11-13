@@ -1,6 +1,6 @@
 {
   "name": "simple-bezier",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "座標配列と直線あたりの分割数からn次ベジェの座標配列に変換",
   "main": "index.js",
   "repository": "https://github.com/mizucoffee/simple-bezier.git",
